@@ -1,6 +1,11 @@
+apipkg==1.4
 attrs==17.4.0
+execnet==1.5.0
+more-itertools==4.1.0
 pluggy==0.6.0
-py==1.5.2
-pytest==3.4.0
-selenium==3.9.0
+py==1.5.3
+pytest==3.5.0
+pytest-forked==0.2
+pytest-xdist==1.22.2
+selenium==3.11.0
 six==1.11.0

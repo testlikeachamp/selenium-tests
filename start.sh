@@ -25,11 +25,13 @@ pip freeze > requirements.txt
 # repeat: pip install -r top-requirements && pip freeze > requirements
 
 
-#https://docs.python.org/3/library/venv.html
-#Steps Mac/linux
-python3 -m venv /path/to/new/virtual/environment  # this can be relative path too (directory doesn't need to exist, python will create it
+# https://docs.python.org/3/library/venv.html
+# Steps Mac/linux
+# Path can be relative path too. If target directory doesn't exist Python will create it.
+python3 -m venv /path/to/new/virtual/environment
+
 # activate venv
-source <venv>/bin/activate  # Mac
+source /path/to/new/virtual/environment/bin/activate  # Mac
 # now run pip install or python - it will use your venv!
 
 # deactivate when done
@@ -45,5 +47,5 @@ python -m venv c:\path\to\myenv  # this can be relative path too (directory does
 deactivate.bat  # when finished
 ##########################################
 
-for Mac
-unzip /Users/dmitrytokarev/Downloads/chromedriver_mac64.zip -d /usr/local/bin/
+# for Mac
+unzip /Users/${USER}/Downloads/chromedriver_mac64.zip -d /usr/local/bin/

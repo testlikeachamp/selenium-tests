@@ -1,0 +1,13 @@
+# IntelliJ IDEA and PyCharm
+.idea
+
+# pytest
+.pytest_cache
+
+# Python
+__pycache__
+*.pyc
+venv
+
+# Logs
+*.log
