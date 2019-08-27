@@ -8,6 +8,7 @@
 __pycache__
 *.pyc
 venv
+py3
 
 # Logs
 *.log
