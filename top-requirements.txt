@@ -1,3 +1,4 @@
+docker
 pytest
 pytest-xdist
 selenium<4.0.0
