@@ -1,19 +1,16 @@
 """
 Module docstring
-blahab
+test google.com
 """
 
 from selenium.webdriver.support.ui import WebDriverWait  # available since 2.4.0
-from selenium.webdriver.support import expected_conditions as EC # available since 2.26.0
+from selenium.webdriver.support import expected_conditions as EC  # available since 2.26.0
 from selenium.webdriver.common.keys import Keys
 import pytest
 
 
 @pytest.mark.google
-@pytest.mark.login_page
-@pytest.mark.credentials
-@pytest.mark.negative
-def test_google_com_login_valid_user_invalid_pwd(driver):
+def test_google_com(driver):
     """
     Test login page: with valid username and invalid password.
     Verify that proper error message is given to user.
@@ -29,7 +26,8 @@ def test_google_com_login_valid_user_invalid_pwd(driver):
 
     # type in the search
     search_box.send_keys("cheese!")
-
+    # import time
+    # time.sleep(3)
     # submit the form (although google automatically searches now without submitting)
     search_box.send_keys(Keys.RETURN)
 

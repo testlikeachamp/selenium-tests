@@ -1,8 +1,11 @@
-import time
+# import time
 
+import pytest
 from selenium.webdriver.common.by import By
 
 from utils.screenshot import take_screenshot
+
+pytestmark = pytest.mark.letskodeit
 
 
 def test_screenshot(driver):
